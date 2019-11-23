@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>My Account</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!--Plugins. I do not own these-->
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<!---->
+
+	<!--Template-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<script src="js/template.js"></script>
+	
+	<script src="js/misc.js" type="text/javascript">function</script>
+	
+</head>
+
+<body onload="start();mainuser();chkfav();preventBack();">
+<div id="navigation"></div>
+<div id="content">
+	<div align="center">
+		<h1>My Account</h1>
+		<form name="acc" id="acc" style="width: 800px">
+			<fieldset>
+				<legend>Personal Details</legend>
+				<table style="width:80%">
+					<tr>
+						<td style="height: 30px"></td>
+						<td style="height: 30px"></td>
+						<td style="height: 30px"></td>
+						<td style="height: 30px" align="right">
+						<input class="btn btn-secondary" name="edit" id="edit" type="button" value="Edit" onclick=";ed();"/>
+						<input class="btn btn-danger" type="button" value="Logout" onclick="localStorage.setItem('user', 0);location.href='login.html'"/>
+						</td>
+					</tr>
+
+					<tr>
+						<td style="padding-left:0px;padding-right:53px">Email</td>
+						<td><input name="email" id="email" type="email" readonly="readonly" /></td>
+						<td style="padding-left:80px;padding-right:58px">Password:</td>
+						<td>
+							<input name="pwd" id="pwd" type="password" readonly="readonly" />
+						</td>
+					</tr>
+					<tr>
+						<td style="padding-left:0px">Name</td>
+						<td><input name="name" id="name" type="text" readonly="readonly" /></td>
+						<td style="padding-left:80px">Phone number</td>
+						<td><input name="pnum" id="pnum" type="text" maxlength="11" readonly="readonly" placeholder="01XXXXXXXX"/></td>
+					</tr>
+					<tr>
+						<td style="padding-left:0px">Birthday</td>
+						<td><input type="date" id="birthday" name="birthday" readonly="readonly" style="width:208px;border:0px" /></td>
+						<td style="padding-left:80px">Gender</td>
+						<td>
+							<input name="gender" id="gender" type="text" readonly="readonly" />
+						</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+				</table>
+			</fieldset>
+		</form>
+		<form id="acc1" method="" style="width:800px">
+			<fieldset name="Group1">
+				<legend>Favourite list</legend>
+				<table style="width:85%;border-right:none">
+					<tr>
+						<td style="width:45%"></td>
+						<td style="width:20%"></td>
+						<td style="width:20%"><input class="btn btn-secondary" name="dlt" id="dlt" value="Delete" type="button" style="margin-left:180px" onclick="showdlt();" /></td>
+					</tr>
+				</table>
+				<table border="1px" style="width:85%">
+					<tr>
+						<td style="width:45%">Product</td>
+						<td style="width:20%">Price</td>
+						<td style="width:20%">Category</td>
+					</tr>
+					<tr id="fav1" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano1" target="_blank">Roland V-Piano Grand</a><input type="button" value="X" id="dltbtn1" onclick="localStorage.setItem('dltnum', 1);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 19999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav2" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano2" target="_blank">Schoenhut Mini Grand Piano 18-key</a><input type="button" value="X" id="dltbtn2" onclick="localStorage.setItem('dltnum', 2);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 399</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav3" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano3" target="_blank">Yamaha YDP-143 Console Digital Piano</a><input type="button" value="X" id="dltbtn3" onclick="localStorage.setItem('dltnum', 3);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 7999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav4" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano4" target="_blank">Used Yamaha UX3 Upright Piano</a><input type="button" value="X" id="dltbtn4" onclick="localStorage.setItem('dltnum', 4);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 12999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav5" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano5" target="_blank">Yamaha b1 OPDW Upright Piano</a><input type="button" value="X" id="dltbtn5" onclick="localStorage.setItem('dltnum', 5);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 11999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav6" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano6" target="_blank">Alesis Melody 61 Beginner</a><input type="button" value="X" id="dltbtn6" onclick="localStorage.setItem('dltnum', 6);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 2499</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav7" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano7" target="_blank">Steinway Sons Concert Grand Piano</a><input type="button" value="X" id="dltbtn7" onclick="localStorage.setItem('dltnum', 7);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 27999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav8" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano8" target="_blank">vidaXL Classic Electronic Piano 88 keys</a><input type="button" value="X" id="dltbtn8" onclick="localStorage.setItem('dltnum', 8);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 8888</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav9" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano9" target="_blank">Roland LX-7 Digital Piano</a><input type="button" value="X" id="dltbtn9" onclick="localStorage.setItem('dltnum', 9);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 13999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav10" style="display:none">
+						<td style="width:45%"><a href="percussion.html#piano10" target="_blank">Get Piano 10</a><input type="button" value="X" id="dltbtn10" onclick="localStorage.setItem('dltnum', 10);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 30999</td>
+						<td style="width:20%">Piano</td>
+					</tr>
+					<tr id="fav11" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum1" target="_blank">BDK-1 Full Size Starter Drum Kit</a><input type="button" value="X" id="dltbtn11" onclick="localStorage.setItem('dltnum', 11);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 9999</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav12" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum2" target="_blank">Rogue 5-Piece Complete Drum Set Wine</a><input type="button" value="X" id="dltbtn12" onclick="localStorage.setItem('dltnum', 12);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 18888</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav13" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum3" target="_blank">ATV aDrums Standard Kit</a><input type="button" value="X" id="dltbtn13" onclick="localStorage.setItem('dltnum', 13);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 12888</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav14" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum4" target="_blank">Ludwig Drum</a><input type="button" value="X" id="dltbtn14" onclick="localStorage.setItem('dltnum', 14);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 13888</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav15" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum5" target="_blank">TOURTECH TT-16S Electronic Drum Kit</a><input type="button" value="X" id="dltbtn15" onclick="localStorage.setItem('dltnum', 15);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 19888</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav16" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum6" target="_blank">Schoenhut 5 Piece Drum Set</a><input type="button" value="X" id="dltbtn16" onclick="localStorage.setItem('dltnum', 16);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 8999</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav17" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum7" target="_blank">Pintech Jaguar Electronic Drum</a><input type="button" value="X" id="dltbtn17" onclick="localStorage.setItem('dltnum', 17);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 14999</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav18" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum8" target="_blank">Ringo Starr Drum Kits</a><input type="button" value="X" id="dltbtn18" onclick="localStorage.setItem('dltnum', 18);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 15999</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav19" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum9" target="_blank">PDP Concept Maple 7pc Drum Set</a><input type="button" value="X" id="dltbtn19" onclick="localStorage.setItem('dltnum', 19);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 16999</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav20" style="display:none">
+						<td style="width:45%"><a href="percussion.html#drum10" target="_blank">Pork Pie Percussion</a><input type="button" value="X" id="dltbtn20" onclick="localStorage.setItem('dltnum', 20);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 21888</td>
+						<td style="width:20%">Drum</td>
+					</tr>
+					<tr id="fav21" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals1" target="_blank">Istanbul Mehmet 19 Orchestral Cymbals</a><input type="button" value="X" id="dltbtn21" onclick="localStorage.setItem('dltnum', 21);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 4999</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav22" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals2" target="_blank">Sabian 19 HH Viennese Hand Cymbals</a><input type="button" value="X" id="dltbtn22" onclick="localStorage.setItem('dltnum', 22);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 7999</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav23" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals3" target="_blank">Z-Mun-Application Cymbals</a><input type="button" value="X" id="dltbtn23" onclick="localStorage.setItem('dltnum', 23);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 6888</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav24" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals4" target="_blank">Magnum Marching Band Cymbals</a><input type="button" value="X" id="dltbtn24" onclick="localStorage.setItem('dltnum', 24);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 2888</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav25" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals5" target="_blank">Pintech PC Cymbals</a><input type="button" value="X" id="dltbtn25" onclick="localStorage.setItem('dltnum', 25);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 8888</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav26" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals6" target="_blank">Paiste Alpha Marching Cymbals</a><input type="button" value="X" id="dltbtn26" onclick="localStorage.setItem('dltnum', 26);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 10999</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav27" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals7" target="_blank">Masterwork Custom Cymbal Set</a><input type="button" value="X" id="dltbtn27" onclick="localStorage.setItem('dltnum', 27);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 3999</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav28" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals8" target="_blank">Samsun Cymbals</a><input type="button" value="X" id="dltbtn28" onclick="localStorage.setItem('dltnum', 28);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 2999</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav29" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals9" target="_blank">ARBOREA cymbals Ghost series</a><input type="button" value="X" id="dltbtn29" onclick="localStorage.setItem('dltnum', 29);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 6388</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav30" style="display:none">
+						<td style="width:45%"><a href="percussion.html#cymbals10" target="_blank">Dream Energy 19 Orchestral Cymbals</a><input type="button" value="X" id="dltbtn30" onclick="localStorage.setItem('dltnum', 30);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 5588</td>
+						<td style="width:20%">Cymbals</td>
+					</tr>
+					<tr id="fav31" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese1" target="_blank">Tang Drum</a><input type="button" value="X" id="dltbtn31" onclick="localStorage.setItem('dltnum', 31);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 5488</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav32" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese2" target="_blank">Red Flower Drum</a><input type="button" value="X" id="dltbtn32" onclick="localStorage.setItem('dltnum', 32);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 7488</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav33" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese3" target="_blank">Flower Pot Drum</a><input type="button" value="X" id="dltbtn33" onclick="localStorage.setItem('dltnum', 33);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 2888</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav34" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese4" target="_blank">Suzhou 18 Chinese Inch Flowerpot Drum</a><input type="button" value="X" id="dltbtn34" onclick="localStorage.setItem('dltnum', 34);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 3499</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav35" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese5" target="_blank">Chinese Peking Cymbals (Medium)</a><input type="button" value="X" id="dltbtn35" onclick="localStorage.setItem('dltnum', 35);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 8899</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav36" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese6" target="_blank">Dream 20 China/Lion Cymbal</a><input type="button" value="X" id="dltbtn36" onclick="localStorage.setItem('dltnum', 36);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 9988</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav37" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese7" target="_blank">Sabian HH 10 China Kang Chinese</a><input type="button" value="X" id="dltbtn37" onclick="localStorage.setItem('dltnum', 37);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 9988</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav38" style="display:none">
+						<td style="width:45%"><a href="percussion.html#chinese8" target="_blank">19 Paragon Chinese Cymbals</a><input type="button" value="X" id="dltbtn38" onclick="localStorage.setItem('dltnum', 38);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 14588</td>
+						<td style="width:20%">Chinese Orchestra</td>
+					</tr>
+					<tr id="fav39" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access1" target="_blank">17 Key Kalimba Single Board</a><input type="button" value="X" id="dltbtn39" onclick="localStorage.setItem('dltnum', 39);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 598</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav40" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access2" target="_blank">Piano Stand</a><input type="button" value="X" id="dltbtn40" onclick="localStorage.setItem('dltnum', 40);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 888</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav41" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access3" target="_blank">Bass Alloy Jazz drum pedal single chain</a><input type="button" value="X" id="dltbtn41" onclick="localStorage.setItem('dltnum', 41);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 1199</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav42" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access4" target="_blank">Qoo10</a><input type="button" value="X" id="dltbtn42" onclick="localStorage.setItem('dltnum', 42);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 58</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav43" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access5" target="_blank">Guitar Stand</a><input type="button" value="X" id="dltbtn43" onclick="localStorage.setItem('dltnum', 43);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 108</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav44" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access6" target="_blank">Guitar Bag</a><input type="button" value="X" id="dltbtn44" onclick="localStorage.setItem('dltnum', 44);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 128</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav45" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access7" target="_blank">CELLULOID GUITAR PICK</a><input type="button" value="X" id="dltbtn45" onclick="localStorage.setItem('dltnum', 45);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 38</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+					<tr id="fav46" style="display:none">
+						<td style="width:45%"><a href="percussion.html#access8" target="_blank">Acrylic Picks</a><input type="button" value="X" id="dltbtn46" onclick="localStorage.setItem('dltnum', 46);dltfav();" style="display:none" /></td>
+						<td style="width:20%">RM 48</td>
+						<td style="width:20%">Accessories</td>
+					</tr>
+
+
+
+
+
+
+
+
+
+				</table>
+			</fieldset>
+		</form>
+	</div>
+</div>
+<div id="footer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+﻿.content-about{
+	height: 2300px;
+}
+
+.about{
+	font-family:cursive;
+	font-size:50px;
+	margin-left:200px;
+}
+
+.shopimg{
+	
+	width:100%;
+	float:left;
+	padding-left:30px;
+	clear:left;
+}
+
+.thxspeech{
+	margin:20px 0px 20px 0px;
+	width:70%;
+	float:left;
+	background-color:rgb(0,40,80);
+	color:white;
+	font-size:20px;
+	border:3px white outset;
+	padding:5px;
+	margin-left:250px;
+
+}
+.words{
+	width:100%;
+	float:left;
+	padding-left: 25px;
+}
+
+
+
+.actorsused{
+	margin-left:20px;
+	float:left;
+	width:33%;
+}
+
+.expain{
+	float:left;
+	width:30%;
+}
+.expain2{
+	float:left;
+	width:60%;
+	font-size:20px;
+
+}
+.video{
+	margin-left:50px;
+	width:30%;
+	float:left;
+}
+
+.introduction{
+	letter-spacing:2px;
+	font-size:20px;
+	width:30%;
+	float:left;
+	margin-left:20px;
+}
+
+.introduction2{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:20px;
+	width:30%;
+	float:left;
+	margin-left:20px;
+}
+
+.introduction3{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:20px;
+	width:100%;
+	float:left;
+	margin-left:0px;
+}
+
+.actorsused2{
+	float:right;
+	width:30%;
+}
+
+.expain3{
+	float:left;
+	width:30%;
+}
+.expain4{
+	float:left;
+	width:60%;
+	font-size:20px;
+
+}
+.video2{
+	margin-left:50px;
+	width:30%;
+	float:right;
+}
+
+.introduction4{
+	letter-spacing:2px;
+	font-size:20px;
+	width:30%;
+	float:left;
+	margin-left:20px;
+}
+
+.introduction5{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:20px;
+	width:30%;
+	float:left;
+	margin-left:20px;
+}
+
+.introduction6{
+	margin-top:20px;
+	letter-spacing:2px;
+	font-size:20px;
+	width:100%;
+	float:left;
+	margin-left:0px;
+}
+

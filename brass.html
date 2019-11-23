@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Brass</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!--Plugins. I do not own these-->
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!--Template-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<script src="js/template.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/brass.css">
+</head>
+
+<body>
+<div id="navigation"></div>
+
+<div id="content">
+<div style="height: 5800px">
+<div class="side-nav-fixed">
+	<div class="side-nav">
+	<ul>
+	<li><a href="#Chinese">Chinese Orchestra</a></li>
+	<li><a href="#Western">Western Orchestra</a></li>
+	<li><a href="#Woodwind">Woodwind</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="brass">Brass</div><div class="brassImg"><img src="img/brass/music-cornet-512.png" alt="Brass" title="Brass" height="100px" width="100px"/></div>
+<div class="brassD">A <span style="font-weight:bold; font-size:20px">Brass Instrument</span> is a musical instrument that produces sound by sympathetic vibration of air in a tubular resonator in sympathy with the vibration of the player's lips. Brass instruments are also 
+called labrosones, literally meaning "lip-vibrated instruments". There are several factors involved in producing different pitches on a brass instrument. Slides, valves, crooks (though they are rarely used today), 
+or keys are used to change vibratory length of tubing, thus changing the available harmonic series, while the player's embouchure, lip tension and air flow serve to select the specific harmonic produced from the available series.
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+	  <img src="img/brass/COM-Guangdong.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/brass/gettyimages-1125004129-612x612.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/brass/6d3b16fb-3121-4b14-8a34-cbcdda77f8ca.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/brass/018-samc-band-orchestra-full.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/brass/Apply-Audition.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+  <div>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  </div>
+	
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<div class="section">	
+
+<h1 id="Chinese">Chinese Orchestra</h1>
+		
+	<div class="chinese" id="chinese1">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/98dc2c71cfa4768199bb62c0cf7af42f1430456576-lg.jpg" alt="Craft Concert Di Zi" title="Craft Concert Di Zi" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Craft Concert Di Zi</h3>
+			<div class="price">
+			<h3>Craft Concert Di Zi</h3>
+			<ul>
+			<li>made in China</li>
+			<li>concert Di Zi</li>
+			<li>Produced since 07<sup>th</sup> January 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt89',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese2">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/Bamboo-Flute-Dizi-Professional-Transverse-Bamboo-Flute-C-D-E-F-G-Flauta-White-Dizi-Musical.jpg_640x640.jpg" alt="Bamboo Flute Dizi" title="Bamboo Flute Dizi" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Bamboo Flute Dizi</h3>
+			<div class="price">
+			<h3>Bamboo Flute Dizi</h3>
+			<ul>
+			<li>made in China</li>
+			<li>for professional used</li>
+			<li>Produced since 17<sup>th</sup> April 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1099</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt90',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese3">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/HT15MoMFKBbXXagOFbXL.jpg" alt="V1NF Great Timbre" title="V1NF Great Timbre" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">V1NF Great Timbre</h3>
+			<div class="price">
+			<h3>V1NF Great Timbre</h3>
+			<ul>
+			<li>made in China</li>
+			<li>traditional di zi with great timbre</li>
+			<li>Produced since 24<sup>th</sup> April 2003</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 899</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt91',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese4">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/zu-guang-di-zi-IMG_2692-800x800.jpg" alt="Zhu Sun" title="Zhu Sun" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Zhu Sun</h3>
+			<div class="price">
+			<h3>Zhu Sun</h3>
+			<ul>
+			<li>made in China</li>
+			<li>zhu sun di zi, short di zi</li>
+			<li>Produced since 15<sup>th</sup> November 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 699</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt92',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese5">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/sao-dizi-bach-ma-sao-tau-trang.jpg" alt="Sao Di Zi" title="Sao Di Zi" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Sao Di Zi</h3>
+			<div class="price">
+			<h3>Sao Di Zi</h3>
+			<ul>
+			<li>made in China</li>
+			<li>white di zi produced good sound</li>
+			<li>Produced since 19<sup>th</sup> June 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 869</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt93',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese6">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/HTB1xux7KpXXXXcxXFXXq6xXFXXXP.jpg" alt="Bamboo Di Zi Professional" title="Bamboo Di Zi Professional" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Bamboo Di Zi Professional</h3>
+			<div class="price">
+			<h3>Bamboo Di Zi Professional</h3>
+			<ul>
+			<li>made in China</li>
+			<li>good quality professional di zi</li>
+			<li>Produced since 01<sup>st</sup> January 1996</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 969</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt94',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese7">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/TB1CSFAHXXXXXcRXFXXXXXXXXXX_!!0-item_pic.jpg" alt="Xiao Bamboo Flute" title="Xiao Bamboo Flute" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Xiao Bamboo Flute</h3>
+			<div class="price">
+			<h3>Xiao Bamboo Flute</h3>
+			<ul>
+			<li>made in China</li>
+			<li>chinese xiao bamboo flute, buy 2 free 1</li>
+			<li>Produced since 22<sup>th</sup> February 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 988</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt95',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese8">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/5414897f67259e2c12c8d76201f38e471444538211-lg.jpg" alt="Soprano 36-reed Sheng" title="Soprano 36-reed Sheng" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Soprano 36-reed Sheng</h3>
+			<div class="price">
+			<h3>Soprano 36-reed Sheng</h3>
+			<ul>
+			<li>made in China</li>
+			<li>by Zhao Hong Liang sheng</li>
+			<li>Produced since 20<sup>th</sup> May 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2199</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt96',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+	
+	<div class="chinese" id="chinese9">
+		<div class="chineseH"> 
+		<button class="overlay"><img src="img/brass/86057897-vector-illustration-of-sheng-chinese-mouth-organ-isolated-on-white-background-.jpg" alt="Vector Illustration" title="Vector Illustration" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Vector Illustration</h3>
+			<div class="price">
+			<h3>Vector Illustration</h3>
+		  	<ul>
+		    <li>made in China</li>
+		    <li>Vector illustration of sheng, chinese mouth organ</li>
+		    <li>Produced since 08<sup>th</sup> August 2005</li>
+		    </ul>
+		    <a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1798</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt97',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese10">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/93feb3d555810600c101fb7f8c7a0f1b1444964214-lg.jpg" alt="Alto 36-reed Pai Sheng" title="Alto 36-reed Pai Sheng" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Alto 36-reed Pai Sheng</h3>
+			<div class="price">
+			<h3>Alto 36-reed Pai Sheng</h3>
+			<ul>
+			<li>made in China</li>
+			<li>by Wang Zeshuang Sheng</li>
+			<li>Produced since 16<sup>th</sup> May 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1988</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt98',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese11">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/Xiaodi.jpg" alt="Xiao Di" title="Xiao Di" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Xiao Di</h3>
+			<div class="price">
+			<h3>Xiao Di</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Xiao Di</li>
+			<li>Produced since 19<sup>th</sup> November 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1498</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt99',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese12">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/s-l1000.jpg" alt="Professional Bamboo F Key Flute" title="Professional Bamboo F Key Flute" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Professional Bamboo F Key Flute</h3>
+			<div class="price">
+			<h3>Professional Bamboo F Key Flute</h3>
+			<ul>
+			<li>made in China</li>
+			<li>F Key flute brass</li>
+			<li>Produced since 05<sup>th</sup> November 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1389</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt100',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="chinese" id="chinese13">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/suonahorn_sign.jpg09e98c19-9e9a-42f0-a952-a2c0ec8287edOriginal.jpg" alt="Max suona horn" title="Max suona horn" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Max suona horn</h3>
+			<div class="price">
+			<h3>Max suona horn</h3>
+			<ul>
+			<li>made in China</li>
+			<li>China Suo Na</li>
+			<li>Produced since 06<sup>th</sup> September 2010</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1399</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt101',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="chinese" id="chinese14">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/brass/High-Quality-Rosewood-Suona-Shanai-for-Beginners-Chinese-Folk-Wind-Musical-Instrument-Zurna-Laba-Key-of.jpg_640x640.jpg" alt="Rose Suona" title="Rose Suona" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Rose Suona</h3>
+			<div class="price">
+			<h3>Rose Suona</h3>
+			<ul>
+			<li>made in China</li>
+			<li>High Quality Rosewood Suona</li>
+			<li>Produced since 13<sup>th</sup> May 1990</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1899</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt102',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>		
+		
+	<h1 id="Western">Western</h1>
+	
+	<div class="western" id="western1">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/1-76-1.gif" alt="Jupiter Alto Horn" title="Jupiter Alto Horn" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Jupiter Alto Horn</h3>
+			<div class="price">
+			<h3>Jupiter Alto Horn</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>band orchestra horn</li>
+			<li>Produced since 15<sup>th</sup> April 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 7777</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt103',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western2">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/20620019.jpg" alt="OAS130" title="OAS130" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">OAS130</h3>
+			<div class="price">
+			<h3>OAS130</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>good quality saxophone</li>
+			<li>Produced since 18<sup>th</sup> May 2003</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 10999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt104',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western3">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/1613648_orig.jpg" alt="Brass Family" title="Brass Family" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Brass Family</h3>
+			<div class="price">
+			<h3>Brass Family</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>marching bass euphonium</li>
+			<li>Produced since 10<sup>th</sup> December 1994</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt105',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western4">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/Trombone_large.jpg" alt="Trombone Large" title="Trombone Large" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Trombone Large</h3>
+			<div class="price">
+			<h3>Trombone Large</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>good quality band Trombone</li>
+			<li>Produced since 07<sup>th</sup> October 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt106',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western5">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/preview_1.jpg" alt="Hans Hoyer 801 Double French Horn" title="Hans Hoyer 801 Double French Horn" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Hans Hoyer 801 Double French Horn</h3>
+			<div class="price">
+			<h3>Hans Hoyer 801 Double French Horn</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>double french horn, for band</li>
+			<li>Produced since 26<sup>th</sup> January 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 7888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt107',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western6">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/trumpet-bb.jpg" alt="The Horn Guys" title="The Horn Guys" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">The Horn Guys</h3>
+			<div class="price">
+			<h3>The Horn Guys</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>golden trumpet, for band</li>
+			<li>Produced since 25<sup>th</sup> February 1996</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4988</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt108',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western7">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/cg-conn-connstellation-52BSP-b-flat-trumpet_1600x.jpg" alt="Silver Trumpet" title="Silver Trumpet" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Silver Trumpet</h3>
+			<div class="price">
+			<h3>Silver Trumpet</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>silver trumpet, for band</li>
+			<li>Produced since 08<sup>th</sup> July 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt109',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western8">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/IMG_5206.JPG.jpg" alt="Vibrato Saxophone" title="Vibrato Saxophone" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Vibrato Saxophone</h3>
+			<div class="price">
+			<h3>Vibrato Saxophone</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>The World's First Polycarbonate Saxophone Meridian Winds</li>
+			<li>Produced since 17<sup>th</sup> November 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 3399</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt110',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="western" id="western9">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/Pink-Alto-Sax-Eb-saxophone-Western-Instruments-saxofone-Wind-Instrument-Saxophone-Alto-Professional-Musical-Instrument-Sax.jpg_640x640 (1).jpg" alt="Pink Alto Sax" title="Pink Alto Sax" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Pink Alto Sax</h3>
+			<div class="price">
+			<h3>Pink Alto Sax</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>good quality pink saxophone</li>
+			<li>Produced since 24<sup>th</sup> June 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6399</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt111',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="western" id="western10">
+		<div class="westernH">
+		<button class="overlay"><img src="img/brass/51BeCl9DUkL._SX425_.jpg" alt="Yamaha YSS-475II" title="Yamaha YSS-475II" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Yamaha YSS-475II</h3>
+			<div class="price">
+			<h3>Yamaha YSS-475II</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>straight golden sexaphone</li>
+			<li>Produced since 17<sup>th</sup> May 2008</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5588</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt112',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>	
+	
+	<h1 id="Woodwind">Woodwind</h1>
+	
+	<div class="woodwind" id="woodwind1">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/62.jpg" alt="Classical Woodwind" title="Classical Woodwind" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Classical Woodwind</h3>
+			<div class="price">
+			<h3>Classical Woodwind</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>classical for kids</li>
+			<li>Produced since 04<sup>th</sup> January 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 498</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt113',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind2">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/15.jpg" alt="Woodwind Sliver" title="Woodwind Sliver" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Woodwind Sliver</h3>
+			<div class="price">
+			<h3>Woodwind Sliver</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>A small, cylindrical woodwind instrument, usually made of silver, that is held sideways to the mouth</li>
+			<li>Produced since 02<sup>nd</sup> May 1996</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 589</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt114',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind3">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/Performance-clarinet-A-tone-clarinet-single-reed-woodwind-instrument-clarinet-in-A-clarinet-case-for-beginner.jpg_640x640.jpg" alt="Performance clarinet A tone" title="Performance clarinet A tone" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Performance clarinet A tone</h3>
+			<div class="price">
+			<h3>Performance clarinet A tone</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>for performance used</li>
+			<li>Produced since 16<sup>th</sup> June 1992</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1198</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt115',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind4">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/s-l300.jpg" alt="Yamaha Flute Student Soprano" title="Yamaha Flute Student Soprano" height="250px" width="250px"id="myimage"/></button>
+		<h3 id="name">Yamaha Flute Student Soprano</h3>
+			<div class="price">	
+			<h3>Yamaha Flute Student Soprano</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>for student used</li>
+			<li>Produced since 27<sup>th</sup> May 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 59</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt116',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind5">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/513apfEuOhL._SY355_.jpg" alt="Blue Woodwind" title="Blue Woodwind" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Blue Woodwind</h3>
+			<div class="price">
+			<h3>Blue Woodwind</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>blue woodwind for kids</li>
+			<li>Produced since 11<sup>th</sup> September 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 368</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt117',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind6">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/images.jpg" alt="Roel's World Blog" title="Roel's World Blog" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Roel's World Blog</h3>
+			<div class="price">
+			<h3>Roel's World Blog</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>royalty roel woodwind</li>
+			<li>Produced since 15<sup>th</sup> October 2006</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 398</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt118',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind7">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/10291521.jpg" alt="Nuova ABS Resin Clarinet" title="Nuova ABS Resin Clarinet" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Nuova ABS Resin Clarinet</h3>
+			<div class="price">	
+			<h3>Nuova ABS Resin Clarinet</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>Final Clearance Nuova ABS Resin Clarinet With Case</li>
+			<li>Produced since 13<sup>th</sup> July 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 738</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt119',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="woodwind" id="woodwind8">
+		<div class="woodwindH">
+		<button class="overlay"><img src="img/brass/pan-flute-with-10-notes.jpg" alt="Panpipes" title="Panpipes" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Panpipes</h3>
+			<div class="price">	
+			<h3>Panpipes</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>Small Woodwind Instruments with 10 keys</li>
+			<li>Produced since 31<sup>th</sup> July 2003</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 198</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt120',1)" value="Add To Favourite" type="button"><img src="img/brass/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+</div>
+<div id="footer"></div>
+
+</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="en-my" http-equiv="Content-Language" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Delivery Form</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<link href="css/template.css" rel="stylesheet" type="text/css"/>
+	
+	<script type="text/javascript">
+	
+	function thank(){
+		alert("Thanks for purchasing!");
+		window.location.href="index.html";
+	}
+	
+	</script>
+</head>
+
+<body>
+<div id="content" style="padding: 50px 0px;">
+<fieldset class="information">
+<h1 align="center"><legend>Delivery Address</legend></h1>
+
+<table style="width: 100%">	<tr>
+		<td><fieldset class="Name">
+		<legend>Name</legend>
+		<table>
+		<tr>
+		<td><input name="firstname" id="firstname" type="text" required="required" placeholder="FIRST NAME*"/></td>
+		<td><input name="lastname" id="lastname" type="text" required="required" placeholder="LAST NAME*"/></td>
+
+		</tr>
+		</table>
+		</fieldset>
+		</td>
+		
+	</tr>
+	<tr>
+	<td><fieldset>
+	<legend>Address</legend>
+	<table>
+	<tr>
+	<td>
+	<input name="address1" id="firstadd" type="text" required="required" size="30" placeholder="Address 1"/></td>
+	</tr>
+	<tr>
+	<td><input name="address" id="secondadd" type="text" required="required" size="30" placeholder="Address 2"/></td>
+	</tr>
+	<tr>
+	<td><input name="address" id="thirdadd" type="text" size="30" placeholder="Adderess 3(Optional)"/></td>
+	</tr>
+	</table>
+	</fieldset>
+   </td>
+	</tr>
+	<tr>
+		<td><fieldset>
+		<legend>State</legend>
+		<table>
+		<tr>
+		<td><select name="state" id="state" style="width: 646px">
+		<optgroup label="select your state">
+		
+		
+		</optgroup>
+		<option autofocus="autofocus">Johor</option>
+	    <option>Kedah</option>
+					<option>Kelantan</option>
+					<option>Kuala Lumpur</option>
+					<option>Labuan</option>
+					<option>Melaka</option>
+					<option>Negeri Sembilan</option>
+					<option>Pahang</option>
+					<option>Perak</option>
+					<option>Perlis</option>
+					<option>Pulau Pinang</option>
+					<option>Putrajaya</option>
+					<option>Sabah</option>
+					<option>Sarawak</option>
+					<option>Selangor</option>
+					<option>Terengganu</option>		
+		
+		</select>
+		</td>
+		</tr>
+		<tr>
+		<td><input name="city" id="city" required="required" placeholder="City*"/></td>
+		</tr>
+		<tr>
+		<td><input name="code" id="code" required="required" placeholder="Postal Code*"/></td>
+		</tr>
+		</table>
+		</fieldset>
+		</td>
+
+	</tr>
+	<tr>
+		<td>
+		
+		<fieldset><legend>Phone Number</legend>
+		<table>
+		<tr><td>
+		<select name="phonenum" id="phonenum" style="width: 80px">
+		
+		<option>010</option>
+		<option>011</option>
+		<option>012</option>
+		<option>013</option>
+		<option>014</option>
+		<option>015</option>
+		<option selected="selected">016</option>
+		<option>017</option>
+		<option>018</option>
+		<option>019</option>
+		
+		</select>
+		</td>
+
+		<td><input name="tel" id="tel" type="text" maxlength="8" required="required" placeholder="xxxxxxxx"/></td>
+		</tr>
+</table>
+		</fieldset>
+		</td>
+	</tr>
+	<tr>
+		<td><fieldset><legend>Email</legend>
+		<table>
+		<tr>
+		<td><input name="mail" id="mail" required="required" placeholder="Email"/></td>
+		<td><select name="mai" id="mai">
+		<option autofocus="autofouces">gmail.com</option>
+		<option>outlook.com</option>
+		<option>yahoo.com</option>
+		<option>hotmail.com</option>
+		
+		</select></td>
+		</tr>
+		</table>
+		
+		
+		
+		</fieldset></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" required="required" />*Yes, I am over 18 years old</td>
+	</tr>
+</table>
+</fieldset>
+<hr/>
+
+<fieldset><h1>Payment Method</h1>
+<h2><img src="img/cart/credit.jpg" width="30px" height="30px"/> Credit/Debit Card</h2>
+<h4>Dear Customer, Please ensure your Credit Card is enabled for online
+	transactions. Please contact your card issuing bank for further information</h4>
+<br />
+<table style="width: 99%">
+	<tr>
+		<td style="width: 187px">Card Number*</td>
+		<td><input name="cardnum" id="cardnum" required="required" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="20" type="text" /></td>
+	</tr>
+	<tr>
+		<td style="width: 187px">Card Name*</td>
+		<td>
+		<form method="post">
+			<input name="cardname" id="cardname" required="required" maxlength="50" placeholder="Card Name" size="50" type="text" /></form>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 187px">Expiry Date*</td>
+		<td>
+		<form method="post">
+			<select name="Month" style="width: 157px">
+			<option selected="selected">Month</option>
+			<option>01</option>
+			<option>02</option>
+			<option>03</option>
+			<option>04</option>
+			<option>05</option>
+			<option>06</option>
+			<option>07</option>
+			<option>08</option>
+			<option>09</option>
+			<option>10</option>
+			<option>11</option>
+			<option>12</option>
+			</select><select name="Year" style="width: 148px; height: 19px">
+			<option selected="selected">Year</option>
+			<option>2019</option>
+			<option>2020</option>
+			<option>2021</option>
+			<option>2022</option>
+			<option>2023</option>
+			<option>2024</option>
+			<option>2025</option>
+			<option>2026</option>
+			<option>2027</option>
+			</select></form>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 187px">CVV*</td>
+		<td>
+			<input name="cvv" id="cvv" type="text" maxlength="3" size="3" placeholder="cvv" />
+		</td>
+	</tr>
+</table>
+</fieldset>
+<div style="width: 100%; margin: 10px auto; text-align: center;">
+<input type="submit" onclick="thank();" class="submit" value="Submit Order"/>
+<input type="reset" class="reset" value="Reset"/>
+</div>
+
+</div>
+
+</body>
+</html>

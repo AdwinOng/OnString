@@ -1,0 +1,953 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Percussion</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!--Plugins. I do not own these-->
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!--Template-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<script src="js/template.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/percussion.css">
+</head>
+
+<body>
+<div id="navigation"></div>
+
+<div id="content">
+<div style="height: 8400px">
+
+<div class="side-nav-fixed">
+	<div class="side-nav">
+	<ul>
+	<li><a href="#Piano">Piano</a></li>
+	<li><a href="#Drum">Drum</a></li>
+	<li><a href="#Cymbals">Cymbals</a></li>
+	<li><a href="#Chinese">Chinese Orchestra</a></li>
+	<li><a href="#accessories">Accessories</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="percussion">Percussion</div><div class="percussionImg"><img src="img/percussion/img_497691.png" alt="Percussion" title="Percussion" height="100px" width="100px"/></div>
+
+<div class="percussionD">A <span style="font-weight:bold; font-size:20px">Percussion Instruments</span> is a musical instrument that is sounded by being struck or scraped by a beater (including attached or enclosed beaters or rattles);
+struck, scraped or rubbed by hand; or struck against another similar instrument. The percussion family is believed to include the oldest musical instruments, following the human voice.
+The percussion section of an orchestra most commonly contains instruments such as timpani, snare drum, bass drum, cymbals, triangle and tambourine. However, the section can also contain non-percussive instruments, 
+such as whistles and sirens, or a blown conch shell. Percussive techniques can also be applied to the human body, as in body percussion. On the other hand, keyboard instruments, 
+such as the celesta, are not normally part of the percussion section, but keyboard percussion instruments such as the glockenspiel and xylophone (which do not have piano keyboards) are included.
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+	  <img src="img/percussion/The-Fascinating-History-of-the-Modern-Grand-Piano.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/percussion/PREMIER-ONE-SERIES-THE-HACKNEY-DRUM-KIT-DRUMAZON_01.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/percussion/1_TBVVfcpB2MLEJA5ybFg5Cw.jpeg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/percussion/percussion.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/percussion/10732373.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+  <div>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  </div>
+	
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="section">	
+
+	<h1 id="Piano">Piano</h1>
+	
+	<div class="piano" id="piano1">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/gp_609.jpg" alt="Roland V-Piano Grand" title="Roland V-Piano Grand" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Roland V-Piano Grand</h3>
+			<div class="price">
+			<h3>Roland V-Piano Grand</h3>
+		  	<ul>
+		    <li>made in Roland</li>
+		    <li>Roland’s revolutionary V-Piano modeling technology in a grand cabinet</li>
+		    <li>Produced since 27<sup>th</sup> May 2012</li>
+		    </ul>		    
+		    <a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>			
+		    <h2 id="money">RM 19999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt1',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		    </div>
+		    
+	</div>
+		
+	<div class="piano" id="piano2">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/189b-1600x-png-v-1517926985-with-piano-images.jpg" alt="Schoenhut Mini Grand Piano 18-key" title="Schoenhut Mini Grand Piano 18-key" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Schoenhut Mini Grand Piano 18-key</h3>
+			<div class="price">
+			<h3>Schoenhut Mini Grand Piano 18-key</h3>
+			<ul>
+			<li>made in Europe</li>
+			<li>18 Key Mini Grand</li>
+			<li>Produced since 12<sup>th</sup> February 1992</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>		    
+			<h2 id="money">RM 399</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt2',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="piano" id="piano3">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/YDP143BW-xlarge.jpg" alt="Yamaha YDP-143 Console Digital Piano" title="Yamaha YDP-143 Console Digital Piano" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Yamaha YDP-143 Console Digital Piano</h3>
+			<div class="price">
+			<h3>Yamaha YDP-143 Console Digital Piano</h3>
+			<ul>
+			<li>Weighted graded hammer action keyboard</li>
+			<li>made in United State</li>
+			<li>Produced since 03<sup>rd</sup> December 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>		    
+			<h2 id="money">RM 7999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt3',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="piano" id="piano4">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/U3.png" alt="Used Yamaha UX3 Upright Piano" title="Used Yamaha UX3 Upright Piano" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Used Yamaha UX3 Upright Piano</h3>
+			<div class="price">
+			<h3>Used Yamaha UX3 Upright Piano</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>Upright Piano</li>
+			<li>Produced since 17<sup>th</sup> September 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 12999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt4',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="piano" id="piano5">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/b1opdw.jpg" alt="Yamaha b1 OPDW Upright Piano" title="Yamaha b1 OPDW Upright Piano" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Yamaha b1 OPDW Upright Piano</h3>
+			<div class="price">	
+			<h3>Yamaha b1 OPDW Upright Piano</h3>
+			<ul>
+			<li>made in korea</li>
+			<li>Upright 88 keys piano</li>
+			<li>Produced since 23<sup>th</sup> November 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 11999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt5',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="piano" id="piano6">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/51cQmOw6bKL._UL1500_.jpg" alt="Alesis Melody 61 Beginner" title="Alesis Melody 61 Beginner" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Alesis Melody 61 Beginner</h3>
+			<div class="price">	
+			<h3>Alesis Melody 61 Beginner</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>more functionable electronic piano</li>
+			<li>Produced since 25<sup>th</sup> May 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2499</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt6',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>		
+	</div>
+		
+	<div class="piano" id="piano7">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/Steinway_&_Sons_concert_grand_piano,_model_D-274,_manufactured_at_Steinway's_factory_in_Hamburg,_Germany.png" alt="Steinway & Sons Concert Grand Piano" title="Steinway & Sons Concert Grand Piano" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Steinway <span>&#38;</span> Sons Concert Grand Piano</h3>
+			<div class="price">	
+			<h3>Steinway <span>&#38;</span> Sons Concert Grand Piano</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>concert of the piano, used to performance</li>
+			<li>Produced since 15<sup>th</sup> April 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 27999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt7',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>		
+	</div>
+		
+	<div class="piano" id="piano8">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/257092586_68bfcd23-2046-4ede-b219-fd635c09f4c6.jpg" alt="vidaXL Classic Electronic Piano 88 keys" title="vidaXL Classic Electronic Piano 88 keys" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">vidaXL Classic Electronic Piano 88 keys</h3>
+			<div class="price">		
+			<h3>vidaXL Classic Electronic Piano 88 keys</h3>
+			<ul>
+			<li>made in China</li>
+			<li>88 keys functionable electronic piano</li>
+			<li>Produced since 14<sup>th</sup> March 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+			<h2 id="money">RM 8888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt8',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>		
+	</div>
+		
+	<div class="piano" id="piano9">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/9153560_1.jpg" alt="Roland LX-7 Digital Piano" title="Roland LX-7 Digital Piano" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Roland LX-7 Digital Piano</h3>
+			<div class="price">			
+			<h3>Roland LX-7 Digital Piano</h3>
+			<ul>
+			<li>made in Roland</li>
+			<li>88 keys digital piano</li>
+			<li>Produced since 02<sup>nd</sup> January 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 13999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt9',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="piano" id="piano10">
+		<div class="pianoH">
+		<button class="overlay"><img src="img/percussion/download.jpg" alt="Get Piano 10" title="Get Piano 10" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Get Piano 10</h3>
+			<div class="price">				
+			<h3>Get Piano 10</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>living room grand piano</li>
+			<li>Produced since 06<sup>th</sup> February 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 30999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt10',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<h1 id="Drum">Drum</h1>
+	
+	<div class="drum" id="drum1">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/preview.jpg" alt="BDK-1 Full Size Starter Drum Kit" title="BDK-1 Full Size Starter Drum Kit" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">BDK-1 Full Size Starter Drum Kit</h3>
+			<div class="price">	
+			<h3>BDK-1 Full Size Starter Drum Kit</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>includes cymbals, hardware, sticks and stool</li>
+			<li>Produced since 18<sup>th</sup> June 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 9999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt11',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum2">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/J56102000001000-00-500x500.jpg" alt="Rogue 5-Piece Complete Drum Set Wine" title="Rogue 5-Piece Complete Drum Set Wine" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Rogue 5-Piece Complete Drum Set Wine</h3>
+			<div class="price">	
+			<h3>Rogue 5-Piece Complete Drum Set Wine</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>includes cymbals, hardware, sticks and stool</li>
+			<li>Produced since 19<sup>th</sup> July 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 18888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt12',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum3">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/atvstd2.jpg" alt="ATV aDrums Standard Kit" title="ATV aDrums Standard Kit" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">ATV aDrums Standard Kit</h3>
+			<div class="price">	
+			<h3>ATV aDrums Standard Kit</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>electronic edm drum</li>
+			<li>Produced since 28<sup>th</sup> May 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 12888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt13',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum4">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/Beginner-Drum-Kits.jpg" alt="Ludwig Drum" title="Ludwig Drum" height="250px" width="300px" id="myimage"/></button>
+		<h3 id="name">Ludwig Drum</h3>	
+			<div class="price">	
+			<h3>Ludwig Drum</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>Beginners of drum and percussion</li>
+			<li>Produced since 23<sup>th</sup> August 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 13888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt14',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum5">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/60321-tourtech-tt-16s-electric-drum-kit.jpg" alt="TOURTECH TT-16S Electronic Drum Kit" title="TOURTECH TT-16S Electronic Drum Kit" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">TOURTECH TT-16S Electronic Drum Kit</h3>
+			<div class="price">	
+			<h3>TOURTECH TT-16S Electronic Drum Kit</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>electronic drumset edm</li>
+			<li>Produced since 15<sup>th</sup> August 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 19888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt15',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>		
+	</div>
+		
+	<div class="drum" id="drum6">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/Products15508-640x640--171242163.jpg" alt="Schoenhut 5 Piece Drum Set" title="Schoenhut 5 Piece Drum Set" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Schoenhut 5 Piece Drum Set</h3>
+			<div class="price">	
+			<h3>Schoenhut 5 Piece Drum Set</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>great sound and incorporating many of the same features</li>
+			<li>Produced since 13<sup>th</sup> February 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 8999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt16',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>		
+	</div>
+		
+	<div class="drum" id="drum7">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/Pintech-Jaguar-Drum-Kit.jpg" alt="Pintech Jaguar Electronic Drum" title="Pintech Jaguar Electronic Drum" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Pintech Jaguar Electronic Drum</h3>
+			<div class="price">		
+			<h3>Pintech Jaguar Electronic Drum</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>gold electronic acoustic drum set</li>
+			<li>Produced since 06<sup>th</sup> June 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>		    
+			<h2 id="money">RM 14999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt17',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum8">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/ringo1.jpg" alt="Ringo Starr Drum Kits" title="Ringo Starr Drum Kits" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Ringo Starr Drum Kits</h3>
+			<div class="price">		
+			<h3>Ringo Starr Drum Kits</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>includes cymbals, hardware, sticks and stool</li>
+			<li>Produced since 07<sup>th</sup> July 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 15999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt18',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum9">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/4888.jpg" alt="PDP Concept Maple 7pc Drum Set" title="PDP Concept Maple 7pc Drum Set " height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">PDP Concept Maple 7pc Drum Set</h3>
+			<div class="price">		
+			<h3>PDP Concept Maple 7pc Drum Set</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>concept in map 7pc drum , includes all element</li>
+			<li>Produced since 09<sup>th</sup> January 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 16999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt19',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="drum" id="drum10">
+		<div class="drumH">
+		<button class="overlay"><img src="img/percussion/rosewoodkit-970h-1030x820.jpg" alt="Pork Pie Percussion" title="Pork Pie Percussion" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Pork Pie Percussion</h3>
+			<div class="price">		
+			<h3>Pork Pie Percussion</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>golden perfect drum set percussion</li>
+			<li>Produced since 20<sup>th</sup> November 1993</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 21888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt20',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+		
+	<h1 id="Cymbals">Cymbals</h1>
+	
+	<div class="cymbals" id="cymbals1">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/preview (1).jpg" alt="Istanbul Mehmet 19 Orchestral Cymbals" title="Istanbul Mehmet 19 Orchestral Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Istanbul Mehmet 19 Orchestral Cymbals</h3>
+			<div class="price">
+			<h3>Istanbul Mehmet 19 Orchestral Cymbals</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>Orchestral used band cymbals</li>
+			<li>Produced since 25<sup>th</sup> May 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt21',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals2">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/Sabian-Sabian-11920.jpg" alt="Sabian 19 HH Viennese Hand Cymbal" title="Sabian 19 HH Viennese Hand Cymbal" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Sabian 19 HH Viennese Hand Cymbals</h3>
+			<div class="price">
+			<h3>Sabian 19 HH Viennese Hand Cymbals</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>golden handing cymbals</li>
+			<li>Produced since 16<sup>th</sup> April 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 7999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt22',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals3">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/3BCMZLAZ14MH_1_1024.jpg" alt="Z-Mun-Application Cymbals" title="Z-Mun-Application Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Z-Mun-Application Cymbals</h3>
+			<div class="price">
+			<h3>Z-Mun-Application Cymbals</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>for marching concept of cymbals</li>
+			<li>Produced since 12<sup>th</sup> May 1994</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt23',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals4">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/magnum-marching-band-cymbals-14-brass-pair.jpg" alt="Magnum Marching Band Cymbals" title="Magnum Marching Band Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Magnum Marching Band Cymbals</h3>
+			<div class="price">
+			<h3>Magnum Marching Band Cymbals</h3>
+			<ul>
+			<li>made in Turkey</li>
+			<li>Band used marching cymbals</li>
+			<li>Produced since 04<sup>th</sup> December 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt24',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals5">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/Pintech-PC-Series-Cymbal.jpg" alt="Pintech PC Cymbals" title="Pintech PC Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Pintech PC Cymbals</h3>
+			<div class="price">
+			<h3>Pintech PC Cymbals</h3>
+			<ul>
+			<li>made in china</li>
+			<li>pintech percussion, for band</li>
+			<li>Produced since 17<sup>th</sup> November 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 8888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt25',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals6">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/paiste-alpha-marching-cymbals-20-incl-pads-and-straps-b-stock_1_DRU0019008-000.jpg" alt="Paiste Alpha Marching Cymbals" title="Paiste Alpha Marching Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Paiste Alpha Marching Cymbals</h3>
+			<div class="price">
+			<h3>Paiste Alpha Marching Cymbals</h3>
+			<ul>
+			<li>made in Turkey</li>
+			<li>for marching symbals, 20 inches</li>
+			<li>Produced since 14<sup>th</sup> August 1992</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 10999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt26',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals7">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/Masterwork-Custom-Cymbal-Set.jpg" alt="Masterwork Custom Cymbal Set" title="Masterwork Custom Cymbal Set" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Masterwork Custom Cymbal Set</h3>
+			<div class="price">
+			<h3>Masterwork Custom Cymbal Set</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>master of cymbals set, custom cymbals set</li>
+			<li>Produced since 14<sup>th</sup> July 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 3999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt27',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals8">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/md_33ac7880b02f80830ab3.png" alt="Samsun Cymbals" title="Samsun Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Samsun Cymbals</h3>
+			<div class="price">
+			<h3>Samsun Cymbals</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>golden united state good quality cymbals</li>
+			<li>Produced since 16<sup>th</sup> July 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2999</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt28',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals9">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/ARBOREA-cymbals-Ghost-series-12-Splash-cymbal-B20-cymbal-for-sale.jpg" alt="ARBOREA cymbals Ghost series" title="ARBOREA cymbals Ghost series" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">ARBOREA cymbals Ghost series</h3>
+			<div class="price">
+			<h3>ARBOREA cymbals Ghost series</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>ghost sound feeling cymbals</li>
+			<li>Produced since 24<sup>th</sup> May 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6388</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt29',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="cymbals" id="cymbals10">
+		<div class="cymbalsH">
+		<button class="overlay"><img src="img/percussion/dreamcyms.jpg" alt="Dream Energy 19 Orchestral Cymbals" title="Dream Energy 19 Orchestral Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Dream Energy 19 Orchestral Cymbals</h3>
+			<div class="price">
+			<h3>Dream Energy 19 Orchestral Cymbals</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>dream cymbals, sound giving energy to you</li>
+			<li>Produced since 27<sup>th</sup> May 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5588</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt30',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<h1 id="Chinese">Chinese Orchestra</h1>
+		
+	<div class="chinese" id="chinese1">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/6ab6c7c203b7200a44565c99e06023981444968807-lg.jpg" alt="Tang Drum" title="Tang Drum" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Tang Drum</h3>
+			<div class="price">
+			<h3>Tang Drum</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Tang Drum china style</li>
+			<li>Produced since 28<sup>th</sup> January 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5488</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt31',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese2">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/Small-Tanggu-Full-2.jpg" alt="Red Flower Drum" title="Red Flower Drum" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Red Flower Drum</h3>
+			<div class="price">
+			<h3>Red Flower Drum</h3>
+			<ul>
+			<li>made in China</li>
+			<li>china style drum</li>
+			<li>Produced since 23<sup>th</sup> March 1996</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 7488</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt32',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese3">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/ff68bcc56efce29e340187f99e7a14fd1444968733-lg.jpg" alt="Flower Pot Drum" title="Flower Pot Drum" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Flower Pot Drum</h3>
+			<div class="price">
+			<h3>Flower Pot Drum</h3>
+			<ul>
+			<li>made in China</li>
+			<li>china style drum</li>
+			<li>Produced since 01<sup>st</sup> February 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2888</h2>
+			<button class="addtofav" onclick="localStorage.setItem('fvtpdt33',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese4">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/Suzhou-Flowerpot-Drum-with-stand-400x600.jpg" alt="Suzhou 18 Chinese Inch Flowerpot Drum" title="Suzhou 18 Chinese Inch Flowerpot Drum" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Suzhou 18 Chinese Inch Flowerpot Drum</h3>
+			<div class="price">
+			<h3>Suzhou 18 Chinese Inch Flowerpot Drum</h3>
+			<ul>
+			<li>made in China</li>
+			<li>china style drum</li>
+			<li>Produced since 02<sup>nd</sup> May 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 3499</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt34',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese5">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/56be6c21682f1256ffd4b69a157db6cb1434994995-lg.jpg" alt="Chinese Peking Cymbals (Medium)" title="Chinese Peking Cymbals (Medium)" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Chinese Peking Cymbals (Medium)</h3>
+			<div class="price">
+			<h3>Chinese Peking Cymbals (Medium)</h3>
+			<ul>
+			<li>made in China</li>
+			<li>chinese cymbals</li>
+			<li>Produced since 07<sup>th</sup> May 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 8899</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt35',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese6">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/Dream-CH20.jpg" alt="Dream 20 China/Lion Cymbal" title="Dream 20 China/Lion Cymbal" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Dream 20 China/Lion Cymbal</h3>
+			<div class="price">
+			<h3>Dream 20 China/Lion Cymbal</h3>
+			<ul>
+			<li>made in China</li>
+			<li>lion china cymbals</li>
+			<li>Produced since 09<sup>th</sup> October 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 9988</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt36',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese7">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/sabian-hh-10-china-kang-chinese.jpg" alt="Sabian HH 10 China Kang Chinese" title="Sabian HH 10 China Kang Chinese" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Sabian HH 10 China Kang Chinese</h3>
+			<div class="price">
+			<h3>Sabian HH 10 China Kang Chinese</h3>
+			<ul>
+			<li>made in China</li>
+			<li>chinese cymbals</li>
+			<li>Produced since 23<sup>th</sup> November 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 9988</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt37',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese8">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/percussion/np1916n-19-inch-paragon-chinese_full.png" alt="19 Paragon Chinese Cymbals" title="19 Paragon Chinese Cymbals" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">19 Paragon Chinese Cymbals</h3>
+			<div class="price">
+			<h3>19 Paragon Chinese Cymbals</h3>
+			<ul>
+			<li>made in China</li>
+			<li>19 inches chinese cymbals</li>
+			<li>Produced since 17<sup>th</sup> April 1991</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 14588</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt38',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+	
+	
+	<h1 id="accessories">Accessories</h1>
+	
+	<div class="access" id="access1">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/24397-description-12-l2.jpg" alt="17 Key Kalimba Single Board" title="17 Key Kalimba Single Board" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">17 Key Kalimba Single Board</h3>
+			<div class="price">
+			<h3>17 Key Kalimba Single Board</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>accessories of Kalimba</li>
+			<li>Produced since 19<sup>th</sup> June 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 598</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt39',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access2">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/Musical-instrument-accessories-adjustable-single-X-keyboard.jpg_350x350.jpg" alt="Piano Stand" title="Piano Stand" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Piano Stand</h3>
+			<div class="price">
+			<h3>Piano Stand</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>musical instruments accessories adjustment</li>
+			<li>Produced since 02<sup>nd</sup> June 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt40',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access3">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/7c8ace9c-e528-442d-aae8-5d20683b2355.jpg" alt="Bass Alloy Jazz drum pedal single chain" title="Bass Alloy Jazz drum pedal single chain" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Bass Alloy Jazz drum pedal single chain</h3>
+			<div class="price">
+			<h3>Bass Alloy Jazz drum pedal single chain</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>add base to drum</li>
+			<li>Produced since 21<sup>th</sup> March 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1199</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt41',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access4">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/611805432.g_400-w_g.jpg" alt="Qoo10" title="Qoo10" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Qoo10</h3>
+			<div class="price">	
+			<h3>Qoo10</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>accessories of guitar</li>
+			<li>Produced since 23<sup>th</sup> May 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 58</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt42',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access5">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/GS10-450x450.jpg" alt="guitar stand" title="guitar stand" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Guitar Stand</h3>
+			<div class="price">
+			<h3>Guitar Stand</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>guitar accessories stander</li>
+			<li>Produced since 14<sup>th</sup> September 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 108</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt43',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access6">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/skb-skb56-single-cutaway-style-electric-guitar-case-l.jpg" alt="Guitar Bag" title="Guitar Bag" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Guitar Bag</h3>
+			<div class="price">
+			<h3>Guitar Bag</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>keep guitar and protect it from destroy</li>
+			<li>Produced since 15<sup>th</sup> October 2006</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 128</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt44',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access7">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/24483116033.MAIN.jpg" alt="CELLULOID GUITAR PICK" title="CELLULOID GUITAR PICK" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">CELLULOID GUITAR PICK</h3>
+			<div class="price">	
+			<h3>CELLULOID GUITAR PICK</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>USA quality guitar picks</li>
+			<li>Produced since 08<sup>th</sup> June 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 38</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt45',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="access" id="access8">
+		<div class="accessH">
+		<button class="overlay"><img src="img/percussion/kkkkkkkkkk-e1497459003732.png" alt="Acrylic Picks" title="Acrylic Picks" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Acrylic Picks</h3>
+			<div class="price">	
+			<h3>Acrylic Picks</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>quality guitar picks</li>
+			<li>Produced since 16<sup>th</sup> July 2003</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 48</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt46',1)" value="Add To Favourite" type="button"><img src="img/percussion/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div id="footer"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Login Page</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!--Plugins. I do not own these-->
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<!---->	
+	
+	<!--Template-->
+	<link href="css/template.css" rel="stylesheet" type="text/css" />
+	<script src="js/template.js" type="text/javascript"></script>
+	
+	<script src="js/misc.js" type="text/javascript"></script>
+</head>
+
+<body onload="start();mainuser();">
+<div id="navigation"></div>
+
+<div id="content">
+<div align="center" style="margin: 100px auto;">
+	<span>New member? <a href="reg.html" style="text-decoration: underline">Register</a> here.</span>
+	<form name="login" action="Acc.html" method="post">
+		<table>
+			<tr>
+				<td>Email Address</td>		
+			</tr>
+			<tr>
+				<td><input name="email" id="email" type="text" size="30" required="required" autofocus="autofocus" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+			</tr>
+			<tr>	
+				<td style="height: 26px"><input name="password" id="password" type="password" size="30" required="required" /></td>	
+			</tr>
+			<tr>
+				<td><br /><input class="btn btn-light" name="login" type="submit" value="Log In" onclick="return verify();"/></td>
+			</tr>
+		</table>
+	</form>	
+</div>
+</div>
+
+<div id="footer"></div>
+</body>
+
+</html>

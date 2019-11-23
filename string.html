@@ -1,0 +1,875 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>String</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!--Plugins. I do not own these-->
+	<script src="js/jquery-3.4.0.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!--Template-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<script src="js/template.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/string.css">
+</head>
+
+<body>
+<div id="navigation"></div>
+
+<div id="content">
+<div style="height: 8000px">
+<div class="side-nav-fixed">
+	<div class="side-nav">
+	<ul>
+	<li><a href="#Guitar">Guitar</a></li>
+	<li><a href="#Violin">Violin</a></li>
+	<li><a href="#Bass">Bass</a></li>
+	<li><a href="#Chinese">Chinese Orchestra</a></li>
+	<li><a href="#Ukulele">Ukulele</a></li>
+	</ul>
+	</div>
+</div>
+
+<div class="string">String</div><div class="stringImg"><img src="img/string/96421.png" alt="String" title="String" height="100px" width="100px"/></div>
+<div class="stringD"><span style="font-weight:bold; font-size:20px">String Instruments</span>, stringed instruments, or chordophones are musical instruments that produce sound from vibrating strings when the performer plays or sounds the strings in some manner.
+Musicians play some string instruments by plucking the strings with their fingers or a plectrum—and others by hitting the strings with a light wooden hammer or by rubbing the strings with a bow. 
+In some keyboard instruments, such as the harpsichord, the musician presses a key that plucks the string.
+With bowed instruments, the player pulls a rosined horsehair bow across the strings, causing them to vibrate. With a hurdy-gurdy, the musician cranks a wheel whose rosined edge touches the strings.
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+	  <img src="img/string/oZr3irkSDKpSSjmFkpgP6K.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/string/IMG_0040.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/string/Mitchell-FB-Series-Bass-Main-Mobile.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/string/muhai-tang-shanghai-chinese-orchestra-2018-grand-chinese-new-year-concert_d_Gxblesa.png" style="width:100%" height="320px"/>
+	</div>
+	
+	<div class="mySlides fade">
+	  <img src="img/string/511263-636180060065392118-16x9.jpg" style="width:100%" height="320px"/>
+	</div>
+	
+  <div>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  </div>
+	
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="section">	
+
+	<h1 id="Guitar">Guitar</h1>
+	
+	<div class="guitar" id="guitar1">
+		<div class="guitarH"> 
+		<button class="overlay"><img src="img/string/fender-squier-sa150n-classical-guitar-0961091021.jpg" alt="Martin D-21 Special Guitar" title="Martin D-21 Special Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Martin D-21 Special Guitar</h3>
+			<div class="price">
+			<h3>Martin D-21 Special Guitar</h3>
+		  	<ul>
+		    <li>made in Martin</li>
+		    <li>Martin special guitar, good quality guitar</li>
+		    <li>Produced since 18<sup>th</sup> September 2005</li>
+		    </ul>
+		    <a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt47',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="guitar" id="guitar2">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/black-fire-electro-acoustic-guitar-front.jpg" alt="Lindo Black Fire Electro Acoustic Guitar" title="Lindo Black Fire Electro Acoustic Guitar" height="250px" width="190px" id="myimage"/></button>
+		<h3 id="name">Lindo Black Fire Electro Acoustic Guitar</h3>
+			<div class="price">
+			<h3>Lindo Black Fire Electro Acoustic Guitar</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>Electronic acoustic guitar, perform elctro sound</li>
+			<li>Produced since 06<sup>th</sup> March 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 988</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt48',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="guitar" id="guitar3">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/10557553.jpeg" alt="BPI California Classic Guitar" title="BPI California Classic Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">BPI California Classic Guitar</h3>
+			<div class="price">
+			<h3>BPI California Classic Guitar</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>Electronic guitar</li>
+			<li>Produced since 19<sup>th</sup> December 1996</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1488</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt49',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="guitar" id="guitar4">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/TE-2-CR.jpg" alt="TE2 CR Baretta" title="TE2 CR Baretta" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">TE2 CR Baretta</h3>
+			<div class="price">
+			<h3>TE2 CR Baretta</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>Electronic rock guitar</li>
+			<li>Produced since 15<sup>th</sup> November 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1399</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt50',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="guitar" id="guitar5">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/515MhLiSXWL._SL1000_.jpg" alt="Stagg S300 Electric Guitar" title="Stagg S300 Electric Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Stagg S300 Electric Guitar</h3>
+			<div class="price">	
+			<h3>Stagg S300 Electric Guitar</h3>
+			<ul>
+			<li>made in korea</li>
+			<li>3&#8725;4 size of electric guitar</li>
+			<li>Produced since 05<sup>th</sup> December 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2199</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt51',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="guitar" id="guitar6">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/preview.jpg" alt="Day of the Dead Junior Classical Guitar" title="Day of the Dead Junior Classical Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Day of the Dead Junior Classical Guitar</h3>
+			<div class="price">	
+			<h3>Day of the Dead Junior Classical Guitar</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>good for junior used</li>
+			<li>Produced since 25<sup>th</sup> June 1991</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 699</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt52',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>		
+	</div>
+		
+	<div class="guitar" id="guitar7">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/FIGABEATD401_1.jpg" alt="BeaverCreek BCTD401" title="BeaverCreek BCTD401" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">BeaverCreek BCTD401</h3>
+			<div class="price">	
+			<h3>BeaverCreek BCTD401</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>1&#8725;2 size acoustic guitar, free guitar stand</li>
+			<li>Produced since 06<sup>th</sup> April 2007</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 899</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt53',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>		
+	</div>
+		
+	<div class="guitar" id="guitar8">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/36979fa8-7da8-4e29-97d0-938875d69e14_1.832feb86e31bfe9c0b94a75bf8bca59c.jpeg" alt="New Beginners Acoustic Guitar" title="New Beginners Acoustic Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">New Beginners Acoustic Guitar</h3>
+			<div class="price">		
+			<h3>New Beginners Acoustic Guitar</h3>
+			<ul>
+			<li>made in China</li>
+			<li>new beginner most used acoustic guitar</li>
+			<li>Produced since 28<sup>th</sup> April 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 799</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt54',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>		
+	</div>
+		
+	<div class="guitar" id="guitar9">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/Moonshine_main_2000x.jpg" alt="Bohemian Moonshine" title="Bohemian Moonshine" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Bohemian Moonshine</h3>
+			<div class="price">			
+			<h3>Bohemian Moonshine</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>Boho series electric guitar rock sound</li>
+			<li>Produced since 02<sup>nd</sup> May 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1599</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt55',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="guitar" id="guitar10">
+		<div class="guitarH">
+		<button class="overlay"><img src="img/string/vb2_front-1600x900.png" alt="Gibson Guitars" title="Gibson Guitars" height="250px" width="400px" id="myimage"/></button>
+		<h3 id="name">Gibson Guitars</h3>
+			<div class="price">				
+			<h3>Gibson Guitars</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>Explore Explorer Models</li>
+			<li>Produced since 11<sup>th</sup> August 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1799</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt56',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<h1 id="Violin">Violin</h1>
+	
+	<div class="violin" id="violin1">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/L-Keller-front-web.jpg" alt="Louis Keller Violin" title="Louis Keller Violin" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Louis Keller Violin</h3>
+			<div class="price">	
+			<h3>Louis Keller Violin</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>big violin provide bass sound</li>
+			<li>Produced since 27<sup>th</sup> May 1998</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt57',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin2">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/preview (2).jpg" alt="Electro Acoustic Violin" title="Electro Acoustic Violin" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Electro Acoustic Violin</h3>
+			<div class="price">	
+			<h3>Electro Acoustic Violin</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>electric violin amp pack</li>
+			<li>Produced since 15<sup>th</sup> July 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5699</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt58',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin3">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/LuisandClarkVIOLIN_2K.jpg" alt="Carbon Fiber Violin" title="Carbon Fiber Violin" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Carbon Fiber Violin</h3>
+			<div class="price">	
+			<h3>Carbon Fiber Violin </h3>
+			<ul>
+			<li>made in United State</li>
+			<li>black colour violin</li>
+			<li>Produced since 28<sup>th</sup> May 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6666</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt59',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin4">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/f8e0cf114253d2732c0dff492991042d.jpg" alt="4/4 Full Size Violin" title="4/4 Full Size Violin" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">4/4 Full Size Violin</h3>	
+			<div class="price">	
+			<h3>4/4 Full Size Violin</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>4/4 full size of quality violin</li>
+			<li>Produced since 23<sup>th</sup> July 1993</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4499</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt60',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin5">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/afceb27f-d729-4f7d-8fb0-fead90e3186c_1.c290ed73d67728766589aa05e2019fc8.jpeg" alt="Zimtown Glarry" title="Zimtown Glarry" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Zimtown Glarry</h3>
+			<div class="price">	
+			<h3>Zimtown Glarry</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>1&#8725;2 Acoustic Violin Starter, free violin bag</li>
+			<li>Produced since 15<sup>th</sup> August 2002</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 8888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt61',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>		
+	</div>
+		
+	<div class="violin" id="violin6">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/sv104blk.jpg" alt="SV104" title="SV104" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">SV104</h3>
+			<div class="price">	
+			<h3>SV104</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>Yamaha YSV104 Silent Violin</li>
+			<li>Produced since 02<sup>nd</sup> January 2007</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 899</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt62',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>		
+	</div>
+		
+	<div class="violin" id="violin7">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/61Ku6T7zx4L._SL1500_0a6aa373-f0b8-4a67-81fc-52948178a59e_1024x1024.jpg" alt="Wooden Violin" title="Wooden Violin" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Wooden Violin</h3>
+			<div class="price">		
+			<h3>Wooden Violin</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>wooden violin , free violin stand</li>
+			<li>Produced since 18<sup>th</sup> June 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6699</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt63',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin8">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/yamaha-violin.jpg" alt="Yamaha YEV Electric Violin" title="Yamaha YEV Electric Violin" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Yamaha YEV Electric Violin</h3>
+			<div class="price">		
+			<h3>Yamaha YEV Electric Violin</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>electric quality violin</li>
+			<li>Produced since 04<sup>th</sup> November 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 7799</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt64',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin9">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/disney-lesson-dream-light-orchestra-musical-instrument-toy-4.jpg" alt="Dream Lesson Light and Disney" title="Dream Lesson Light and Disney" height="250px" width="300px" id="myimage"/></button>
+		<h3 id="name">Dream Lesson Light and Disney</h3>
+			<div class="price">		
+			<h3>Dream Lesson Light and Disney</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>dreaming feeling sound good quality violin</li>
+			<li>Produced since 10<sup>th</sup> January 2008</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 9999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt65',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="violin" id="violin10">
+		<div class="violinH">
+		<button class="overlay"><img src="img/string/Violin-eng-small.png" alt="Home" title="Home" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Home</h3>
+			<div class="price">		
+			<h3>Home</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>silver home violin perfect quality</li>
+			<li>Produced since 20<sup>th</sup> June 1991</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5599</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt66',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+		
+	<h1 id="Bass">Bass</h1>
+	
+	<div class="bass" id="bass1">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/LuisandClarkBASS_2k.jpg" alt="Carbon Fiber Double Bass" title="Carbon Fiber Double Bass" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Carbon Fiber Double Bass</h3>
+			<div class="price">
+			<h3>Carbon Fiber Double Bass</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>band orchestra fiber double bass</li>
+			<li>Produced since 12<sup>th</sup> May 2006</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6777</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt67',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass2">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/fpb62-car_01.jpg" alt="Bass Guitar" title="Bass Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Bass Guitar</h3>
+			<div class="price">
+			<h3>Bass Guitar</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>produced bass sound of guitar</li>
+			<li>Produced since 19<sup>th</sup> April 2009</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt68',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass3">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/fender-roger-waters-precision-bass-_1_BAS0005307-000.jpg" alt="The Roger Waters Precision Bass" title="The Roger Waters Precision Bass" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">The Roger Waters Precision Bass</h3>
+			<div class="price">
+			<h3>The Roger Waters Precision Bass</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>double bass rock guitar</li>
+			<li>Produced since 10<sup>th</sup> November 1996</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6999</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt69',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass4">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/510426000001000-00-500x500.jpg" alt="Squier Affinity Bronco Bass Guitar" title="Squier Affinity Bronco Bass Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Squier Affinity Bronco Bass Guitar</h3>
+			<div class="price">
+			<h3>Squier Affinity Bronco Bass Guitar</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>good quality band bass Guitar</li>
+			<li>Produced since 03<sup>rd</sup> October 1990</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4388</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt70',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass5">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/MLB1-DH-QSD_grande.png" alt="Chapman MLB1 DH Signature Bass" title="Chapman MLB1 DH Signature Bass" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Chapman MLB1 DH Signature Bass</h3>
+			<div class="price">
+			<h3>Chapman MLB1 DH Signature Bass</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>signature bass, good quality bass</li>
+			<li>Produced since 29<sup>th</sup> January 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 3888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt71',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass6">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/Fender-Player-Stratocaster-1.jpg" alt="Laney RB4 Richter Bass Amplifier" title="Laney RB4 Richter Bass Amplifier" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Laney RB4 Richter Bass Amplifier</h3>
+			<div class="price">
+			<h3>Laney RB4 Richter Bass Amplifier</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>Good quality bass</li>
+			<li>Produced since 21<sup>th</sup> March 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4699</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt72',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass7">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/515MhLiSXWL._SL1000_.jpg" alt="4 String Electric Bass" title="4 String Electric Bass" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">4 String Electric Bass</h3>
+			<div class="price">
+			<h3>4 String Electric Bass</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>4 string bass electric guitar</li>
+			<li>Produced since 07<sup>th</sup> June 2004</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 6299</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt73',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass8">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/preview (5).jpg" alt="Schecter Stiletto Extreme-5 Bass Guitar" title="Schecter Stiletto Extreme-5 Bass Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Schecter Stiletto Extreme-5 Bass Guitar</h3>
+			<div class="price">
+			<h3>Schecter Stiletto Extreme-5 Bass Guitar</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>good quality bass guitar</li>
+			<li>Produced since 11<sup>th</sup> October 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2399</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt74',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass9">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/06_BassGuitar_043-min_altered1_square2.jpg" alt="Bass Guitar" title="Bass Guitar" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Bass Guitar</h3>
+			<div class="price">
+			<h3>Bass Guitar</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>good quality bass guitar</li>
+			<li>Produced since 26<sup>th</sup> January 1999</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4599</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt75',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="bass" id="bass10">
+		<div class="bassH">
+		<button class="overlay"><img src="img/string/us171049_600x.jpg" alt="Dean Guitars" title="Dean Guitars" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Dean Guitars</h3>
+			<div class="price">
+			<h3>Dean Guitars</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>Iconic Rock 'n' Roll Guitar Company</li>
+			<li>Produced since 08<sup>th</sup> January 2008</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 9888</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt76',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<h1 id="Chinese">Chinese Orchestra</h1>
+		
+	<div class="chinese" id="chinese1">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/string/613ac33f8196a655a62d4bec892004c31495858152-lg.jpg" alt="Starter Grade Shanghai Rosewood Erhu" title="Starter Grade Shanghai Rosewood Erhu" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Starter Grade Shanghai Rosewood Erhu</h3>
+			<div class="price">
+			<h3>Starter Grade Shanghai Rosewood Erhu</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Er Hu in Shang Hai</li>
+			<li>Produced since 28<sup>th</sup> January 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1288</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt77',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+			</div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese2">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/string/e691639a6749987ec90ac6d816c0dbd11488765694-lg.jpg" alt="Shanghai Dunhuang Zhong Hu" title="Shanghai Dunhuang Zhong Hu" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Shanghai Dunhuang Zhong Hu</h3>
+			<div class="price">
+			<h3>Shanghai Dunhuang Zhong Hu</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Zhong Hu in Shang Hai</li>
+			<li>Produced since 06<sup>th</sup> March 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 1488</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt78',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese3">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/string/5688c3699386a746bbfea929f6b9f99c1488767304-lg.jpg" alt="Concert Rosewood Shanghai Gao Hu" title="Concert Rosewood Shanghai Gao Hu" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Concert Rosewood Shanghai Gao Hu</h3>
+			<div class="price">
+			<h3>Concert Rosewood Shanghai Gao Hu</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Gao Hu in Shang Hai</li>
+			<li>Produced since 01<sup>st</sup> April 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 2899</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt79',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese4">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/string/musical-instrument-pipa-china-7637156.jpg" alt="Pipa light" title="Pipa light" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Pipa light</h3>
+			<div class="price">
+			<h3>Pipa light</h3>
+			<ul>
+			<li>made in China</li>
+			<li>pipa light good quality</li>
+			<li>Produced since 12<sup>th</sup> May 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 3499</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt80',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese5">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/string/41djoYvIMUL.jpg" alt="ZhongRuan Light" title="ZhongRuan Light" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">ZhongRuan Light</h3>
+			<div class="price">
+			<h3>ZhongRuan Light</h3>
+			<ul>
+			<li>made in China</li>
+			<li>ZhongRuan light good quality</li>
+			<li>Produced since 18<sup>th</sup> July 1997</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 4499</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt81',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="chinese" id="chinese6">
+		<div class="chineseH">
+		<button class="overlay"><img src="img/string/TB27AAQsKySBuNjy1zdXXXPxFXa_!!55343776.jpg" alt="Di Yin Ruan" title="Di Yin Ruan" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Di Yin Ruan</h3>
+			<div class="price">
+			<h3>Di Yin Ruan</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Di Yin Ruan good quality</li>
+			<li>Produced since 07<sup>th</sup> October 1995</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 5588</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt82',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>	
+	
+	<h1 id="Ukulele">Ukulele</h1>
+	
+	<div class="ukulele" id="ukulele1">
+		<div class="ukuleleH">
+		<button class="overlay"><img src="img/string/K46685000002000-00-500x500.jpg" alt="Alvarez Grateful Dead Concert Ukulele" title="Alvarez Grateful Dead Concert Ukulele" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Alvarez Grateful Dead Concert Ukulele</h3>
+			<div class="price">
+			<h3>Alvarez Grateful Dead Concert Ukulele</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>for concert used</li>
+			<li>Produced since 20<sup>th</sup> July 2010</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 398</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt83',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="ukulele" id="ukulele2">
+		<div class="ukuleleH">
+		<button class="overlay"><img src="img/string/makala_mk_ss_grn_sharks_series_surf_green_1179400.jpg" alt="MAKALA MK-SS/GRN Shark" title="MAKALA MK-SS/GRN Shark" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">MAKALA MK-SS/GRN Shark</h3>
+			<div class="price">
+			<h3>MAKALA MK-SS/GRN Shark</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>hot green ukulele</li>
+			<li>Produced since 04<sup>th</sup> January 2005</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 288</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt84',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="ukulele" id="ukulele3">
+		<div class="ukuleleH">
+		<button class="overlay"><img src="img/string/20181126180638_27559.jpg" alt="Xiaomi Populele APP LED" title="Xiaomi Populele APP LED" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Xiaomi Populele APP LED</h3>
+			<div class="price">
+			<h3>Xiaomi Populele APP LED</h3>
+			<ul>
+			<li>made in China</li>
+			<li>Bluetooth LED USB ukulele</li>
+			<li>Produced since 22<sup>th</sup> May 1994</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 399</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt85',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="ukulele" id="ukulele4">
+		<div class="ukuleleH">
+		<button class="overlay"><img src="img/string/soprano-carbon-nickel-wall_2048x.jpg" alt="Outdoor Ukulele™ Soprano Nickel" title="Outdoor Ukulele™ Soprano Nickel" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Outdoor Ukulele<sup>tm</sup> Soprano Nickel</h3>
+			<div class="price">	
+			<h3>Outdoor Ukulele<sup>tm</sup> Soprano Nickel</h3>
+			<ul>
+			<li>made in Japan</li>
+			<li>outdoor quality ukulele</li>
+			<li>Produced since 20<sup>th</sup> November 2001</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 488</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt86',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="ukulele" id="ukulele5">
+		<div class="ukuleleH">
+		<button class="overlay"><img src="img/string/images.png" alt="Hape Ukulele" title="Hape Ukulele" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Hape Ukulele</h3>
+			<div class="price">
+			<h3>Hape Ukulele</h3>
+			<ul>
+			<li>made in Korea</li>
+			<li>Red quality ukulele</li>
+			<li>Produced since 04<sup>th</sup> September 2006</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 98</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt87',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+	<div class="ukulele" id="ukulele6">
+		<div class="ukuleleH">
+		<button class="overlay"><img src="img/string/am-69669_1.jpg" alt="Redwood V-Shaped Ukulele" title="Redwood V-Shaped Ukulele" height="250px" width="250px" id="myimage"/></button>
+		<h3 id="name">Redwood V-Shaped Ukulele</h3>
+			<div class="price">
+			<h3>Redwood V-Shaped Ukulele</h3>
+			<ul>
+			<li>made in United State</li>
+			<li>V-shape ukulele, free ukulele bag</li>
+			<li>Produced since 05<sup>th</sup> May 2000</li>
+			</ul>
+			<a href="Cart.html"><img src="img/addtocart.png" alt="Add to cart" title="Add to Cart" height="70px" width="70px" id="img"/></a>
+		    <h2 id="money">RM 198</h2>
+		    <button class="addtofav" onclick="localStorage.setItem('fvtpdt88',1)" value="Add To Favourite" type="button"><img src="img/string/Official_Logo_OneLove.png" alt="Add to Favourite" title="Add to favourite" height="70px" width="70px"/></button>
+		    </div>
+		</div>
+	</div>
+		
+</div>
+</div>
+		
+</div>
+<div id="footer"></div>
+</body>
+
+</html>
